@@ -1,3 +1,27 @@
+To properly display your images on the website, you need to ensure that the image files are correctly referenced in the HTML and that they are placed in the correct folder in your repository. Let's assume your images are all in a folder named `images`. Here’s how you can organize your HTML to reference these images properly:
+
+1. **Ensure your folder structure is correct**:
+   - `index.html`
+   - `styles.css`
+   - `images/`
+     - `logo.png`
+     - `about-banner.jpg`
+     - `team-banner.jpg`
+     - `documentary-still.jpg`
+     - `companion-book.jpg`
+     - `historical-videos.jpg`
+     - `language-timeline.jpg`
+     - `events-banner.jpg`
+     - `educational-content.jpg`
+     - `social-media-challenges.jpg`
+     - `crowdfunding-banner.jpg`
+     - `merchandise-banner.jpg`
+     - `subscribe-banner.jpg`
+     - `social-media-banner.jpg`
+
+2. **Ensure the HTML correctly references these images**:
+   
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +42,7 @@
     </video>
     <div class="overlay">
         <h1>Welcome to Quantum True Collab</h1>
+        <img src="images/logo.png" alt="Quantum True Collab Logo" width="150">
     </div>
 </header>
 
@@ -34,16 +59,16 @@
 
     <section id="about" class="section">
         <h2>About the Project</h2>
-        <img src="about-banner.jpg" alt="About the Project Banner" class="section-banner">
+        <img src="images/about-banner.jpg" alt="About the Project Banner" class="section-banner">
         <p>Quantum True Collab: The Chronicle of Everything chronicles my transition from law to quantum research, exploring groundbreaking discoveries in quantum mechanics, the holographic universe, AI integration, metamaterials, the theory of everything, and patterns in the Voynich Manuscript. This project aims to educate, inspire, and captivate audiences through a blend of personal narrative, scientific exploration, and visual storytelling.</p>
     </section>
 
     <section id="team" class="section">
         <h2>The Team</h2>
-        <img src="team-banner.jpg" alt="Team Banner" class="section-banner">
+        <img src="images/team-banner.jpg" alt="Team Banner" class="section-banner">
         <div class="team">
             <div class="member">
-                <img src="kat-coffey-thompson.jpg" alt="Kathleen C. Thompson" width="150">
+                <img src="images/kat-coffey-thompson.jpg" alt="Kathleen C. Thompson" width="150">
                 <h3>Kathleen C. Thompson</h3>
                 <p>Dynamic legal professional with over 11 years of complex litigation experience, possessing a unique blend of skills in qualitative analysis, strategic thinking, and ethical decision-making. Kathleen is a self-taught prompt engineer and AI ethics enthusiast with a proven track record of innovation, demonstrated through groundbreaking independent research projects like the Life's Banter Book (LBB) and #TRUECOLLAB. She is passionate about leveraging legal expertise and analytical acumen to contribute to the development and implementation of AI systems that align with human values, prioritizing transparency, collaboration, and responsible innovation.</p>
             </div>
@@ -55,7 +80,7 @@
         <h2>Discover</h2>
         <div class="subsection">
             <h3>Documentary</h3>
-            <img src="documentary-still.jpg" alt="Documentary Still" class="section-banner">
+            <img src="images/documentary-still.jpg" alt="Documentary Still" class="section-banner">
             <p>Join us on an extraordinary journey from personal adversity to groundbreaking scientific discoveries. Watch the trailer below.</p>
             <video controls width="100%">
                 <source src="trailer.mp4" type="video/mp4">
@@ -64,17 +89,17 @@
         </div>
         <div class="subsection">
             <h3>Companion Book</h3>
-            <img src="companion-book.jpg" alt="Companion Book" class="section-banner">
+            <img src="images/companion-book.jpg" alt="Companion Book" class="section-banner">
             <p>Create a companion book series that delves deeper into scientific, philosophical, and historical aspects of the Theory of Everything. This includes chapters on scientific concepts, philosophical insights, and historical figures.</p>
         </div>
         <div class="subsection">
             <h3>Historical Videos</h3>
-            <img src="historical-videos.jpg" alt="Historical Videos" class="section-banner">
+            <img src="images/historical-videos.jpg" alt="Historical Videos" class="section-banner">
             <p>Develop a series of short videos exploring hidden connections and patterns throughout history, focusing on specific eras, cultures, or disciplines.</p>
         </div>
         <div class="subsection">
             <h3>Language Timeline</h3>
-            <img src="language-timeline.jpg" alt="Language Timeline" class="section-banner">
+            <img src="images/language-timeline.jpg" alt="Language Timeline" class="section-banner">
             <p>Create an interactive timeline showcasing the development of language from ancient times to present day, with key moments in linguistic history and interactive elements.</p>
         </div>
     </section>
@@ -83,17 +108,17 @@
         <h2>Engage</h2>
         <div class="subsection">
             <h3>Events</h3>
-            <img src="events-banner.jpg" alt="Events Banner" class="section-banner">
+            <img src="images/events-banner.jpg" alt="Events Banner" class="section-banner">
             <p>Join us for upcoming events, screenings, and Q&A sessions. RSVP or purchase tickets directly from the site.</p>
         </div>
         <div class="subsection">
             <h3>Educational Content</h3>
-            <img src="educational-content.jpg" alt="Educational Content" class="section-banner">
+            <img src="images/educational-content.jpg" alt="Educational Content" class="section-banner">
             <p>Develop a series of educational videos, articles, and podcasts breaking down complex concepts, and engage the community with informed supporters passionate about the mission.</p>
         </div>
         <div class="subsection">
             <h3>Social Media Challenges</h3>
-            <img src="social-media-challenges.jpg" alt="Social Media Challenges" class="section-banner">
+            <img src="images/social-media-challenges.jpg" alt="Social Media Challenges" class="section-banner">
             <p>Launch challenges encouraging supporters to share their own stories, including transformation stories and collaboration stories inspired by Quantum True Collab.</p>
         </div>
     </section>
@@ -102,12 +127,12 @@
         <h2>Support</h2>
         <div class="subsection">
             <h3>Crowdfunding</h3>
-            <img src="crowdfunding-banner.jpg" alt="Crowdfunding Banner" class="section-banner">
+            <img src="images/crowdfunding-banner.jpg" alt="Crowdfunding Banner" class="section-banner">
             <p>Add exciting stretch goals to the crowdfunding campaign, including additional documentary episodes, exclusive merchandise, and virtual Q&A opportunities.</p>
         </div>
         <div class="subsection">
             <h3>Merchandise</h3>
-            <img src="merchandise-banner.jpg" alt="Merchandise Banner" class="section-banner">
+            <img src="images/merchandise-banner.jpg" alt="Merchandise Banner" class="section-banner">
             <p>Explore our collection of Quantum True Collab merchandise, including t-shirts, posters, and exclusive items for supporters.</p>
         </div>
     </section>
@@ -128,27 +153,9 @@
         </div>
         <div class="subsection">
             <h3>Subscribe</h3>
-            <img src="subscribe-banner.jpg" alt="Subscribe Banner" class="section-banner">
+            <img src="images/subscribe-banner.jpg" alt="Subscribe Banner" class="section-banner">
             <p>Stay connected with Quantum True Collab by subscribing to our newsletter. Receive updates on the latest discoveries, events, and exclusive content straight to your inbox.</p>
             <form action="subscribe.php" method="post">
                 <label for="subscribe-email">Email:</label><br>
                 <input type="email" id="subscribe-email" name="email" required><br><br>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-        <div class="subsection">
-            <h3>Social Media</h3>
-            <img src="social-media-banner.jpg" alt="Social Media Banner" class="section-banner">
-            <p>Follow us on social media:</p>
-            <!-- Add social media links here -->
-        </div>
-    </section>
-
-</div>
-
-<footer>
-    <p>&copy; 2023 Quantum True Collab. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+                <
